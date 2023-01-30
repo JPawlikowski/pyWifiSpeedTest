@@ -16,7 +16,7 @@ dt = datetime.now()
 current_time = dt.strftime("%Y%m%d%H%M")
 current_log = str("./output/wifi_results_"+current_time+".csv")
 
-st = speedtest.Speedtest()
+st = speedtest.Speedtest(secure=True)
 
 results = []
 
